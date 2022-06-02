@@ -3,6 +3,10 @@ import './App.css';
 import { Peliculas } from './Peliculas';
 
 function App() {
+
+  const titulo= "oblivion";
+  const rate = "8.1";
+
   return (
     <div>
       <div id="preloader">
@@ -243,7 +247,7 @@ function App() {
 
 
               {/* Aqui debe ir mi componenete */}
-              <Peliculas />
+              <Peliculas titulo={titulo} rate={rate}/>
 
 
               <div className="movie-item-style-2">
