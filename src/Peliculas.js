@@ -1,16 +1,16 @@
 import React from 'react'
 
-export const Peliculas = ({titulo, rate}) => {
+export const Peliculas = (props) => {
     return (
         <div className="movie-item-style-2">
-            <img src="images/uploads/mv1.jpg" alt="" />
+            <img src={props.imgURL} alt="" />
             <div className="mv-item-infor">
-                <h6><a href="moviesingle.html">{titulo}<span>(2012)</span></a></h6>
-                <p className="rate"><i className="ion-android-star"></i><span>{rate}</span> /10</p>
-                <p className="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-                <p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-                <p>Director: <a href="#">Joss Whedon</a></p>
-                <p>Stars: <a href="#">Robert Downey Jr.,</a> <a href="#">Chris Evans,</a> <a href="#">  Chris Hemsworth</a></p>
+                <h6><a href="moviesingle.html">{props.titulo}<span>{props.year}</span></a></h6>
+                <p className="rate"><i className="ion-android-star"></i><span>{props.rate}</span> /10</p>
+                <p className="describe">{props.children}</p>
+                <p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: {props.fecha}</span></p>
+                <p>Director: <a href="#">{props.director}</a></p>
+                <p>Stars: <a href="#">{props.actores},</a></p>
             </div>
         </div>
     )
