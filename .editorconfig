@@ -2,7 +2,7 @@ root = true
 
 
 [*]
-charset = utf-8 #*Esta
+charset = utf-8
 end_of_line = crlf
 indent_style = tab
 indent_size = 4
@@ -10,6 +10,7 @@ indent_size = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# *Es por los archivos de react y el package
 [*.{js,json}]
 indent_style = tab
 indent_size = 2
