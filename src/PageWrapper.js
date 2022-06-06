@@ -242,7 +242,6 @@ export const PageWrapper = (props) => {
               {/* Aqui debe ir mi componenete */}
               {props.children}
 
-
             </div>
             <div className="col-md-4 col-sm-12 col-xs-12">
               <div className="sidebar">
